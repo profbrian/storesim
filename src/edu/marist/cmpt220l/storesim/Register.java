@@ -15,14 +15,27 @@ public class Register {
         return customer;
     }
 
+    /**
+     * Retrieve how much time is remaining to service this customer
+     *
+     * @return the amount of time remaining to service this customer
+     */
     public int getTimeRemaining() {
         return timeToService;
     }
 
+    /**
+     * Retrieve whether there is currently a customer at this register
+     *
+     * @return true if there is a customer at this register, false otherwise
+     */
     public boolean hasCustomer() {
         return customer != null;
     }
 
+    /**
+     * Remove the customer from the register
+     */
     public void removeCustomer() {
         customer = null;
     }
